@@ -1,0 +1,21 @@
+./src/com/hiro/liboptions/libopt.java 
+
+設計図：
+１，mainメッソドを実行
+２，オプションを取得
+３．オプションの数に応じて、配列の値を決める
+４・配列には、それぞれ、型名をつける。
+
+
+コーディング例：
+	public static void main(String args[]){
+		new Main().init(args);
+	}
+	private void init(String[] args){
+		for(String arrry_subject : args){
+			System.out.println("array subject : ");
+			if(array_subject.equlal('--public')){
+				
+		}
+	}
+

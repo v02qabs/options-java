@@ -1,9 +1,6 @@
 packages com.hiro.liboptions;
 
 class libopt{
-	public static void main(String[] args){
-		System.out.println("Hello libopt.java");
-	}
 	public libopt(){
 		}
 	public int col;
@@ -11,8 +8,20 @@ class libopt{
 	public void setOptCoulm(int coulm){
 		this.col = coulm;
 	}
-	public  
-
+	
+	public String init_opt(int length, String options, String...  args){
+		for(int i=0;i<args.length; i++){
+			System.out.println("データの個数：" + args[i]);
+			if(args[i].equals(options)){
+				System.out.println("hit");
+				System.out.println("[" + options + "] + のオプション：" + args[i+1]);
+				rargs = args[i+1];
+				return rargs;
+			}
+		}
+			return rargs;
+	}
+   
 
 }
 
